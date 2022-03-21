@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+/* Google fonts url: https://fonts.google.com/ */
+
+body {
+    background-color: hsl(200, 20%, 80%);
+    margin: 0;
+}
+
+h1 {
+    font-family: Nanum Gothic;
+}
+
+#specific-header {
+    color: hsl(120, 20%, 40%);
+    background-color: hsl(60, 20%, 80%);
+    margin: 10px /*top*/ 80px /*right*/ 20px /*bottom*/ 10px /*left*/;
+    margin: 10px 40px;
+    margin: 10px;
+}
+
+#info-section {
+    background-color: hsl(100, 20%, 80%);
+    /*padding follows same rules as margin*/
+    /* padding: 10px 40px 20px 90px;
+    padding: 20px 40px; */
+    padding: 10px;
+}
+
+#info-section img{
+    background-color: hsl(180, 50%, 50%);
+    height: 30vh;
+    /* width: 50vw; */
+    /* object-fit: cover; */
+    /* object-fit: contain; */
+    /* object-fit: fill; */
+    /* object-position: 50% 50%; */
+    /* object-position: 0% 0%; */
+    /* object-position: 30% 30%;  */
+}
+
+#mountain-pic {
+    
+}

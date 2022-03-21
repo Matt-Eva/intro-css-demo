@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
 body {
-    display: grid;
-    grid-template-rows: 10vh 80vh 100vh 10vh;
-    background-color: red;
+    background-color: hsl(150, 36%, 66%);
     margin: 0;
+    /* padding: 10px; */
+
+    display: grid;
+    grid-template-rows: 10vh 50vh 40vh; /*vh stands for "viewport height"*/
+    grid-template-columns: 100vw; /*vw stands for "viewport width"*/
 }
 
-h1 {
-    font-family: Nanum Gothic;
-    text-align: center;
-}
+
 
 #header {
      grid-row: 1 / span 1;
-     background-color: hsl(200, 50%, 50%);
+     background-color: hsl(200, 62%, 88%);
 
      display: grid;
      grid-template-rows: 10vh;
@@ -23,62 +23,56 @@ h1 {
 
 #header h1 {
     grid-row: 1 / span 1;
+    font-size: 5vh;
+}
+
+h1 {
+    font-family: Nanum Gothic;
+    color: black;
+    font-size: 4vh;
+    text-align: center;
 }
 
 #main {
     grid-row: 2 / span 1;
-    background-color: hsl(200, 50%, 20%);
+    background-color: hsl(200, 90%, 20%);
     align-items: center;
     display: grid;
-    grid-template-rows: 10vh 60vh 10vh;
-    margin: 1vh;
+    grid-template-rows: 10vh 40vh;
 }
 
 #main h1{
     color: white;
-    /* text-align: center; */
-}
-
-#main p{
-    grid-row: 3 / span 1;
-    background-color: hsl(120, 50%, 90%)
 }
 
 #image-container{
     grid-row: 2 / span 1;
     display: grid;
-    grid-template-rows: 60vh;
+    grid-template-rows: 40vh;
     align-items: center;
-    background-color: hsl(200, 80%, 90%);
+    background-color: hsl(120, 80%, 90%);
 }
 
 .display-image {
     justify-self: center;
     grid-row: 1 / span 1;
-    max-height: 30vh;
-    padding: 2px;
-    /* max-width: 45vh; */
+    height: 50%;
 }
 
-#image-sizing{
-    grid-row: 3 / span 1;
-    background-color: hsl(120, 90%, 90%);
+#footer {
+    grid-row: 3 / span 1; 
+    display: grid;
+    grid-template-rows: 40vh;
+    grid-template-columns: 25% 50% 25%; 
+    justify-content: center;
 }
 
-.distorted-image {
-    width: 10%;
-    height: 40vh;
-}
-
-.cropped-image {
-    width: 10%;
-    height: 40vh;
-    object-fit: cover;
-}
-
-.cropped-positioned-image {
-    width: 50%;
-    height: 50vh;
-    object-fit: cover;
-    object-position: 10% 100%;
-}
+#test {
+    grid-column: 2 / span 1;
+    justify-self: center;
+    height: 50%;
+    background-color: hsl(0, 50%, 90%);
+    padding: 10px;
+    border: solid;
+    margin: 10px;
+} 
