@@ -6,7 +6,7 @@
     margin: 0;
     /* ^^ Margin controls the space AROUND an element*/
     padding: 0;
-    /* ^^ Padding controls the space between the edge of an element and the content it is 
+    /* ^^ Padding controls the space BETWEEN the edge of an element and the content it is 
     displaying */
 
     /* box-sizing: content-box; */
@@ -29,13 +29,13 @@ h1 {
     font-family: Caveat;
 }
 
-/* body h1{
+body h1{
     font-family: 'Times New Roman';
     color: blue;
-} */
+}
 
 #specific-header {
-    color: hsl(240, 50%, 40%);
+    color: purple;
     background-color: hsl(60, 20%, 80%);
     /* font-family: Helvetica; */
     border: solid;
