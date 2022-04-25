@@ -49,7 +49,10 @@ Now, let's talk about some of the most common selectors you'll use in your code.
 If you check out your `bascis.css` file, you'll see that at the top of our file we're using the `*` symbol. This sybmol is known as the "universal selector". Using this selector means we're telling our CSS file to grab every HTML element in file and apply the following set of styles to it. In this example, we're giving every element a `padding` of `0`, a `margin` of `0`, and a `box-sizing` of `border-box` (we'll discuss what these each mean in a later section).
 
 ```
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 ```
 
 
