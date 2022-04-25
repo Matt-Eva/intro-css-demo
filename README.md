@@ -116,7 +116,7 @@ One key aspect of CSS is that we're able to override styles we've already writte
 
 ### General Specificity Overview
 
-At the basic level, CSS specificity is pretty straightforward. The universal selecter -`*`- is the least specific selector, tag name selectors - like `div` - are the second least specific, followed by classnames - `.info-text` - and finally Ids - `#specific-header` - which are the most specific selector. In case this still isn't clear, let's run through a little example. We'll start off by setting a background color using our universal selector.
+At the basic level, CSS specificity is pretty straightforward. The universal selecter -`*`- is the least specific selector, tag name selectors - like `div` - are the second least specific, followed by classnames - `.info-text` - and finally Ids - `#specific-header` - which are the most specific selector. In case this still isn't clear, let's run through a little example. We'll start off by giving all of our HTML elements a green background color using our universal selector.
 
 ```
 * {
@@ -124,7 +124,7 @@ At the basic level, CSS specificity is pretty straightforward. The universal sel
 }
 ```
 
-Now let's that we want all of our `<h1>` elements to have a different background color. Because using a tag name is _more specific_ than using the universal selector, we can _overwrite_ the styles set using our universal selector for our `<h1>` elements.
+Now let's imagine that we want all of our `<h1>` elements to have a different background color. Because using a tag name is _more specific_ than using the universal selector, we can _overwrite_ the styles set using our universal selector for our `<h1>` elements.
 
 ```
 h1 {
