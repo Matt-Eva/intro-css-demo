@@ -2,15 +2,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Indie+Flower&family=Nanum+Gothic&family=Patrick+Hand&family=Tajawal:wght@200&display=swap');
 /* Google fonts url: https://fonts.google.com/ */
 
-body {
-    /* three main ways to select colors: hsl, rgb, and hex */
-    background-color: hsl(184, 31%, 46%);
+* {
     margin: 0;
+    /* ^^ Margin controls the space AROUND an element*/
+    padding: 0;
+    /* ^^ Padding controls the space between the edge of an element and the content it is 
+    displaying */
+
+    /* box-sizing: content-box; */
+    /* ^^ All elements are given a default "box-sizing" attribute of "content-box". The total
+    width and height of elements with the "content-box" sizing attribute is equal to the width 
+    and or height we give to the element, plus whatever border and padding we give to the element.*/
+
+    box-sizing: border-box;
+    /* ^^ Setting the box-sizing attribute of all our elements to "border-box" will 
+    often make styling easier, as these elements will never expand beyond the specific width
+    or height that we give them, regardless of whether or not we give them padding and a border.*/
+}
+
+body {
+    /* three main ways to select colors: hsl, rgba, and hex */
+    background-color: hsl(184, 31%, 46%);
 }
 
 h1 {
     font-family: Caveat;
 }
+
+/* body h1{
+    font-family: 'Times New Roman';
+    color: blue;
+} */
 
 #specific-header {
     color: hsl(240, 50%, 40%);
