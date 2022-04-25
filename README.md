@@ -65,7 +65,7 @@ body {
     background-color: hsl(184, 31%, 46%);
 }
 
-h1{
+h1 {
     font-family: Caveat;
 }
 ```
@@ -119,15 +119,40 @@ One key aspect of CSS is that we're able to override styles we've already writte
 At the basic level, CSS specificity is pretty straightforward. The universal selecter -`*`- is the least specific selector, tag name selectors - like `div` - are the second least specific, followed by classnames - `.info-text` - and finally Ids - `#specific-header` - which are the most specific selector. In case this still isn't clear, let's run through a little example. We'll start off by setting a background color using our universal selector.
 
 ```
-*{
+* {
     background-color: green;
 }
 ```
 
-Now let's that we want all of our `<div>` elements to have a different background color. Because using a tag name is _more specific_ than using the universal selector, we can _overwrite_ the styles set using our universal selector for our `<div>` elements.
+Now let's that we want all of our `<h1>` elements to have a different background color. Because using a tag name is _more specific_ than using the universal selector, we can _overwrite_ the styles set using our universal selector for our `<h1>` elements.
 
 ```
-div {
-    
+h1 {
+    background-color: blue;
 }
 ```
+Now our `<h1>` elements will all have a blue background - however, all of our other elements will still have a green background, because the background-color set by the universal selector _still applies_. In order for it to not apply, we have to specifically overwrite it.
+
+Let's go further - maybe we have a subset of `<h1>` elements that we want to give an orange background to. Maybe we also want to change their font family to Helvetica. Seems like a good time for a class! We give them a class of "helv-orng".
+
+```
+.helv-orng {
+    background-color: orange;
+    font-family: Helvetica;
+}
+```
+
+All of our `<h1>` elements that we've given this classname will now have orange backgrounds and Helvetica font. All of our other `<h1>` elements will have blue backgrounds and default font, while all other elements on our page will still have green backgrounds. Each level of styling is still technically _applying_ to all of the selected elements, its just that we've selected certain elements using more specific selectors and overwritten previously set styles.
+
+Finally, we want to select a single `<h1>` element and give it a purple background. We've already given it a class of `.helv-orng`. Now, we're going to give it an Id of `#purple-h`.
+
+```
+#purple-h {
+    background-color: purple;
+}
+```
+
+Our Id selector now overrides our class selector, so the background is purple instead of orange. However, the font-family of our `#purple-h` is still Helvetica, since our class still applies - we've simply overridden the background-color specified by our class using our Id selector.
+
+### Selecting by Child Elements
+
