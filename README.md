@@ -56,4 +56,16 @@ If you check out your `bascis.css` file, you'll see that at the top of our file 
 }
 ```
 
+### Tag Name Selectors
 
+On a slightly more specific level, we can use HTML tag names - ` div, p, h1, img, etc` - to select all HTML elements of that tag name type and apply styles to them. We can even do this to our `<body>` tag, which wraps the rest of our HTML elements. In our `basics.css` file, you'll notice that we're selecting our `body` tag and all of our `h1` tags. We're giving our `body` a background color and our `h1s` a font-family of `Caveat`. This sets the font family of _all_ `h1` tags in our document to `Caveat`.
+
+```
+body {
+    background-color: hsl(184, 31%, 46%);
+}
+
+h1{
+font-family: Caveat;
+}
+```
