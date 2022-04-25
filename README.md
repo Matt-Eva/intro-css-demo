@@ -78,7 +78,7 @@ To select an HTML element by its Id in our CSS file, we use the `#` symbol in co
 
 ``` 
 #specific-header {
-    color: hsl(240, 50%, 40%);
+    color: purple;
     background-color: hsl(60, 20%, 80%);
     border: solid;
     margin: 10px 80px 20px 10px;
@@ -156,3 +156,21 @@ Our Id selector now overrides our class selector, so the background is purple in
 
 ### Selecting by Child Elements
 
+What we didn't discuss in the previous section about CSS Selectors is the fact that you can select elements by referencing the parent element, then referencing a child element or set of child elements within that parent element. The reason that we're discussing this here is that doing things like this can make specificity go pretty wonky.
+
+Generally speaking, specifying a parent element then a child element within that parent element counts for greater levels of specificity. For example, if we uncomment the `body h1` selector in our basics.css file, it will overwrite our `h1` selector, even though they're technically selecting the same set of `h1` elements. 
+
+```
+h1 {
+    font-family: Caveat;
+}
+
+body h1{
+    /* This set of styles will override the set of styles above */
+    font-family: 'Times New Roman';
+    color: blue;
+}
+```
+However, our `#specific-header` selector will still override our `body h1` selector.
+
+To read more on rules of Specificity, check out <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity">MDN docs</a>
