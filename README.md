@@ -69,3 +69,16 @@ h1{
     font-family: Caveat;
 }
 ```
+
+### Selecting by Id
+
+Check out our `basics.html` file. You'll notice that we have an `<h1>` tag with an id attribute of "specific-header" within its opening tag. By giving our HTML elements Ids, we can select them in our CSS files (and in our JavaScript files). Ids a special in that only one HTML element can have a certain Id - it's a very specific way to select a certain HTML element.
+
+To select an HTML element by its Id in our CSS file, we use the `#` symbol in conjunction with the Id name. For example, in our `basics.css` file, we're selecting our "specific-header" `h1` by writing `#specific-header`. We can then give is a set of styles:
+
+``` 
+#specific-header {
+    color: hsl(240, 50%, 40%);
+    background-color: hsl(60, 20%, 80%);
+}
+```
