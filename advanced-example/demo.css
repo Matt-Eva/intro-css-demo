@@ -1,16 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
+
 body {
     background-color: hsl(150, 36%, 66%);
-    margin: 0;
-    /* padding: 10px; */
 
     display: grid;
     grid-template-rows: 10vh 50vh 40vh; /*vh stands for "viewport height"*/
     grid-template-columns: 100vw; /*vw stands for "viewport width"*/
 }
 
-
+h1 {
+    font-family: Nanum Gothic;
+    color: black;
+    font-size: 4vh;
+    text-align: center;
+}
 
 #header {
      grid-row: 1 / span 1;
@@ -26,12 +30,6 @@ body {
     font-size: 5vh;
 }
 
-h1 {
-    font-family: Nanum Gothic;
-    color: black;
-    font-size: 4vh;
-    text-align: center;
-}
 
 #main {
     grid-row: 2 / span 1;
