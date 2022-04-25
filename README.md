@@ -110,6 +110,24 @@ To select elements by Class in our CSS files, we prepend the name of the class w
 
 If you check out `basics.html` in your browser, you'll notice that only the two paragraphs that have been given the additional class of `.bold-text` have bold font.
 
-## Hierarchy and Specificity
+## Specificity and Hierarchy
 
+One key aspect of CSS is that we're able to override styles we've already written using more _specific_ selectors. This allows us to set general, default styles for HTML elements on our webpage, then overwrite them as needed to achieve a specific aesthetic. The rules of CSS specificity, however, are a little bit strange.
 
+### General Specificity Overview
+
+At the basic level, CSS specificity is pretty straightforward. The universal selecter -`*`- is the least specific selector, tag name selectors - like `div` - are the second least specific, followed by classnames - `.info-text` - and finally Ids - `#specific-header` - which are the most specific selector. In case this still isn't clear, let's run through a little example. We'll start off by setting a background color using our universal selector.
+
+```
+*{
+    background-color: green;
+}
+```
+
+Now let's that we want all of our `<div>` elements to have a different background color. Because using a tag name is _more specific_ than using the universal selector, we can _overwrite_ the styles set using our universal selector for our `<div>` elements.
+
+```
+div {
+    
+}
+```
