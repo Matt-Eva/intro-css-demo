@@ -107,3 +107,9 @@ To select elements by Class in our CSS files, we prepend the name of the class w
 }
 
 ```
+
+If you check out `basics.html` in your browser, you'll notice that only the two paragraphs that have been given the additional class of `.bold-text` have bold font.
+
+## Hierarchy and Specificity
+
+
