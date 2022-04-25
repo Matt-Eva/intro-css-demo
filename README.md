@@ -1,6 +1,6 @@
 # Intro to CSS
 
-This application serves as an introduction to fundamental CSS concepts, including CSS selectors, writing CSS, the Box Model, and other fundamental styling attributes in CSS. I'd recommend forking, cloning, and opening this repository as you read along, so you can use the code files as reference.
+This application serves as an introduction to fundamental CSS concepts, including CSS selectors, CSS Specificity and Hierarchy, writing CSS, the Box Model, and other fundamental styling attributes in CSS. I'd recommend forking, cloning, and opening this repository as you read along, so you can use the code files as reference.
 
 ## What is CSS?
 
@@ -35,11 +35,21 @@ Now that you've got your CSS file hooked up to your HTML file, it's time to star
 When writing CSS, we'll reference a specific selector (universal, tagname, id, classname, etc.), then write the styles we want to apply to that element / that set of elements within curly braces. Each CSS styling attribute will consist of an attribute name and an attribute style separated by a colon. Different sets of corresponding names and styles are separated by a semicolon. So, your CSS will end up looking something like this:
 
 ```
-
+<css selector> {
+    <css attribute name>: <css attribute style>;
+    <css attribute name>: <css attribute style>;
+    <css attribute name>: <css attribute style>;
+}
 ```
+
+Now, let's talk about some of the most common selectors you'll use in your code.
 
 ### The Universal Selector
 
-If you check out your `bascis.css` file, you'll see that at the top of our file we're using the `*` symbol
+If you check out your `bascis.css` file, you'll see that at the top of our file we're using the `*` symbol. This sybmol is known as the "universal selector". Using this selector means we're telling our CSS file to grab every HTML element in file and apply the following set of styles to it. In this example, we're giving every element a `padding` of `0`, a `margin` of `0`, and a `box-sizing` of `border-box` (we'll discuss what these each mean in a later section).
+
+```
+
+```
 
 
