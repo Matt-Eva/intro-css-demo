@@ -53,6 +53,7 @@ If you check out your `bascis.css` file, you'll see that at the top of our file 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
 ```
 
 
