@@ -211,4 +211,4 @@ h1 {
 }
 ```
 
-In the above example, the 
+In the above example, the second set of styles will apply, setting the font color of all h1 elements to red.
