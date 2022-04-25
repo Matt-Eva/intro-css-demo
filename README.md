@@ -10,7 +10,7 @@ In order to style our webpage, we attach CSS styles to our specific HTML element
 
 ## Connecting HTML and CSS Files
 
-When building out HTML for your webpage, there are a few sections that you'll likely fill out before you jump in to actually creating HTML elements. One of these sections is the `<head>` section. You'll connect your CSS to your HTML using a link tag in this head section. Your head section will likely look like this:
+When building out HTML for your webpage, there are a few sections that you'll likely fill out before you actually start creating HTML elements. One of these sections is the `<head>` section. You'll connect your CSS to your HTML using a link tag in this head section. Your head section will likely look like this:
 
 ```
 <!DOCTYPE html>
