@@ -87,3 +87,23 @@ To select an HTML element by its Id in our CSS file, we use the `#` symbol in co
 If you look elsewhere in our `basics.css` file, you'll notice that we're using Id selectors to grab our `#info-section` `div` and our `#mountain-pic` `img`.
 
 ### Selecting by Classname
+
+While selecting elements by their Id offers us a high level of specificity, sometimes we'll want to apply styling more generally, while still being more specific than just using general tag names. We can do this using classnames.
+
+Classnames can be given to multiple elements throughout your HTML file - elements can also have more than one classname. In general, you'll find that most people rely primarily on Classnames for selecting HTML elements (especially once you start working in React), but there are instances in which using other selector methods may be more appropriate.
+
+Let's take a look at our `<p>` tags within our `info-section` `<div>`. You'll notice that each `<p>` tag has a class of "info-text" - two of our `<p>` tags also have a class of "bold-text".
+
+To select elements by Class in our CSS files, we prepend the name of the class with a `.` If you check out our `basics.css` file, you'll notice that we're using `.info-text` and `.bold-text` to select our elements with those Classes. Then we're giving them a set of styles:
+
+```
+.info-text {
+    font-family: Helvetica;
+    font-size: 20px;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+```
