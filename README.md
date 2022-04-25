@@ -80,5 +80,7 @@ To select an HTML element by its Id in our CSS file, we use the `#` symbol in co
 #specific-header {
     color: hsl(240, 50%, 40%);
     background-color: hsl(60, 20%, 80%);
+    border: solid;
+    margin: 10px 80px 20px 10px;
 }
 ```
