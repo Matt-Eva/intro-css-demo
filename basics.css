@@ -1,26 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Indie+Flower&family=Nanum+Gothic&family=Patrick+Hand&family=Tajawal:wght@200&display=swap');
 /* Google fonts url: https://fonts.google.com/ */
 
 body {
-    background-color: hsl(200, 20%, 80%);
+    /* three main ways to select colors: hsl, rgb, and hex */
+    background-color: hsl(184, 31%, 46%);
     margin: 0;
 }
 
 h1 {
-    font-family: Nanum Gothic;
+    font-family: Caveat;
 }
 
 #specific-header {
-    color: hsl(120, 20%, 40%);
+    color: hsl(240, 50%, 40%);
     background-color: hsl(60, 20%, 80%);
+    /* font-family: Helvetica; */
     border: solid;
     margin: 10px /*top*/ 80px /*right*/ 20px /*bottom*/ 10px /*left*/;
-    /* margin: 10px 40px; */
-    /* margin: 10px; */
+    /* margin: 10px 40px;
+    margin: 10px; */
     /*padding follows same rules as margin*/
-    padding: 10px 40px 20px 90px;
-    /* padding: 20px 40px;  */
-    /* padding: 10px; */
+    /* padding: 10px 40px 20px 90px;
+    padding: 20px 40px; 
+    padding: 10px; */
 }
 
 #info-section {
@@ -33,12 +36,17 @@ h1 {
 
 .info-text {
     font-family: Helvetica;
-    font-size: 1em;
+    font-size: 20px;
+}
+
+.bold-text {
+    font-weight: bold;
 }
 
 #info-section img{
     background-color: hsl(180, 50%, 50%);
-    height: 30vh;
+    /* can set heights using percentages, viewport fractions, and pixels */
+    height: 20vh;
     /* width: 50vw; */
     /* object-fit: cover; */
     /* object-fit: contain; */
@@ -49,9 +57,9 @@ h1 {
 }
 
 #mountain-pic {
-    height: 50vh;
+    height: 200vh;
 }   
 
-#info-section #mountain-pic {
-    /* height: 50vh; */
-}
+/* #info-section #mountain-pic {
+    height: 30vh;
+} */
