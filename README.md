@@ -84,3 +84,6 @@ To select an HTML element by its Id in our CSS file, we use the `#` symbol in co
     margin: 10px 80px 20px 10px;
 }
 ```
+If you look elsewhere in our `basics.css` file, you'll notice that we're using Id selectors to grab our `#info-section` `div` and our `#mountain-pic` `img`.
+
+### Selecting by Classname
