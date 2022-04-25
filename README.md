@@ -28,6 +28,18 @@ Notice the `<link>` tag with `rel="stylesheet"` and `href="<Your CSS Filename>"`
 
 ## CSS Selectors
 
-Now that you've got your
+Now that you've got your CSS file hooked up to your HTML file, it's time to start selecting some HTML elements! Take a look at the `basics.html` file and the `basics.css` file - we'll be referencing both throughout the following sections.
+
+### Using a Selector / Writing CSS
+
+When writing CSS, we'll reference a specific selector (universal, tagname, id, classname, etc.), then write the styles we want to apply to that element / that set of elements within curly braces. Each CSS styling attribute will consist of an attribute name and an attribute style separated by a colon. Different sets of corresponding names and styles are separated by a semicolon. So, your CSS will end up looking something like this:
+
+```
+
+```
+
+### The Universal Selector
+
+If you check out your `bascis.css` file, you'll see that at the top of our file we're using the `*` symbol
 
 
