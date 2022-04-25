@@ -1,6 +1,6 @@
 # Intro to CSS
 
-This application serves and an introduction to fundamental CSS concepts, including CSS selectors, writing CSS, the Box Model, and other fundamental styling attributes in CSS. I'd recommend forking, cloning, and opening this repository as you read along, so you can use the code files as reference.
+This application serves as an introduction to fundamental CSS concepts, including CSS selectors, writing CSS, the Box Model, and other fundamental styling attributes in CSS. I'd recommend forking, cloning, and opening this repository as you read along, so you can use the code files as reference.
 
 ## What is CSS?
 
