@@ -1,16 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
+* {
+    margin: 0;
+    /* ^^ Margin controls the space AROUND an element*/
+    padding: 0;
+    /* ^^ Padding controls the space between */
+
+    /* box-sizing: content-box; */
+    /* ^^ All elements are given a default "box-sizing" attribute of "content-box". The total
+    width and height of elements with the "content-box" sizing attribute is equal to the width 
+    and or height we give to the element, plus whatever border and padding we give to the element.*/
+
+    box-sizing: border-box;
+    /* ^^ Setting the box-sizing attribute of all our elements to "border-box" will 
+    often make styling easier, as these elements will never expand beyond the specific width
+    or height that we give them, regardless of whether or not we give them padding and a border.*/
+}
+
 body {
     background-color: hsl(150, 36%, 66%);
-    margin: 0;
-    /* padding: 10px; */
 
     display: grid;
     grid-template-rows: 10vh 50vh 40vh; /*vh stands for "viewport height"*/
     grid-template-columns: 100vw; /*vw stands for "viewport width"*/
 }
 
-
+h1 {
+    font-family: Nanum Gothic;
+    color: black;
+    font-size: 4vh;
+    text-align: center;
+}
 
 #header {
      grid-row: 1 / span 1;
@@ -26,12 +46,6 @@ body {
     font-size: 5vh;
 }
 
-h1 {
-    font-family: Nanum Gothic;
-    color: black;
-    font-size: 4vh;
-    text-align: center;
-}
 
 #main {
     grid-row: 2 / span 1;
