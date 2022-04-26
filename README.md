@@ -224,3 +224,35 @@ Ex:
 Now, click on the `specific-header` `<h1>` in your elements tab. Selecting an element in your elements tab means that all the styles displayed in your styles tab are styles that apply to that specific element. Styles that are crossed out are not being applied to the element, either because they are being overridden or because they are commented out in your CSS file. 
 
 Next, scroll down in your Styles tab until you can see the icon displaying nested rectangles, as seen in the example picture above. You'll notice that each of these rectangles has a name associated with it (except for the inner-most rectangle). These names are `margin`, `border`, and `padding` (The innermost rectangle is often referred to as `content`).
+
+If you hover over each section - `margin`, `border`, `padding`, or `content` - you'll see that a corresponding area on your display is highlighted. This set of nested rectangles is a visual representation of the **Box Model**, which each HTML element has.
+
+### Margin
+
+The outermost part of the Box Model is the `margin` - this defines the space around an HTML element(how far away it is from other elements and edges, like the edge of the screen). You can adjust the margin around an HTML element using the `margin` attribute in CSS. Ex:
+
+```
+#specific-header {
+    margin: 10px 80px 20px 10px;
+}
+```
+When giving four values to a margin, the leftmost value defines the margin at the top of the element, followed by the right, bottom, and left margins. If you only specify two values, the first will determine the top and bottom margin, while the second will determine the left and right value. Passing margin a single value will set the margin on all four sides to that value.
+
+### Border
+
+The second outermost layer ont he box model is the `border` - this is the actual _edge_ of the HTML element, and can be given its own set of styles:
+
+```
+#specific-header {
+    border: solid;
+    border-width: 4px;
+    border-radius: 5px;
+}
+```
+While all elements will have a default border - the edge of the element itself - you won't see a visible border on your elements until you give them one. In the above example, I've given my element a solid border that's 4px wide and has rounded corners. You can also set border styles for specific sides of you element, using `border-top`, `border-right`, `border-bottom`, and `border-left`. 
+
+Check out these docs to learn more about border styling:
+https://www.w3schools.com/css/css_border.asp
+https://developer.mozilla.org/en-US/docs/Web/CSS/border
+
+### Padding
