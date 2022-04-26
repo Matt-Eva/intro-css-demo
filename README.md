@@ -221,3 +221,6 @@ Ex:
 
 ![Screen Shot 2022-04-26 at 8 30 48 AM](https://user-images.githubusercontent.com/89106805/165337358-a7ec2724-f83b-469b-bed3-6f457191990e.png)
 
+Now, click on the `specific-header` `<h1>` in your elements tab. Selecting an element in your elements tab means that all the styles displayed in your styles tab are styles that apply to that specific element. Styles that are crossed out are not being applied to the element, either because they are being overridden or because they are commented out in your CSS file. 
+
+Next, scroll down in your Styles tab until you can see the icon displaying nested rectangles, as seen in the example picture above. You'll notice that each of these rectangles has a name associated with it (except for the inner-most rectangle). These names are `margin`, `border`, and `padding` (The innermost rectangle is often referred to as `content`).
