@@ -215,4 +215,9 @@ In the above example, the second set of styles will apply, setting the font colo
 
 ## The Box Model
 
+All HTML elements follow what's known as the **Box Model**. To get a deeper insight into what the box model actually is, check out `basics.html` in your browser, inspect your page using developer tools, and check out the elements tab. Next, expand the **Styles** section in your dev tools so that you can view your Elements tab and your styles tab simultaneously. 
+
+Ex:
+
+![Screen Shot 2022-04-26 at 8 30 48 AM](https://user-images.githubusercontent.com/89106805/165337358-a7ec2724-f83b-469b-bed3-6f457191990e.png)
 
