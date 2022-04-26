@@ -290,7 +290,7 @@ In order for styling attributes like `vw` and `vh` to work, you must have this m
 
 This tag sets the viewport width and height to be scaled to whatever device the webpage is being used upon.
 
-#### %
+#### percentages (%)
 
 If you neglect to give a parent element a set width and / or height, then try to use a `%` value to set the width and / or height of a child element, it won't work. In order to use `%` values for the width and / or height of an element, its parent element must have an established width and / or height.
 
