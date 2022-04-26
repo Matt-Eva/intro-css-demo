@@ -191,11 +191,11 @@ Let's run back to our first example, where `#specific-header` overrode `body h1`
 
 However, in our `#info-section img` vs `#mountain-pic` instance, both `#mountain-pic` and `#info-section` are Ids - they carry the same weight of specificity. Therefore, because they have equal rank in the specificity hierarchy at this outermost level, adding the `img` tag after `#info-section` adds greater specificity to that selector, which means its styles are the styles that ultimately apply. If we were to change `#info-section` from an Id to a class - `.info-section` - we would see our `#mountain-pic` styles suddenly apply, since Ids are more specific than classes.
 
-Basically, specifying child elements within parents elements only have greater specificity when that parent element has a specificity that is greater than or equal to the specificity of contradicting styles. If those contradicting styles' outermost specificty is greater than that of the parent selector, the contradicting styles will apply. This principle holds true throughout every level of nesting.
+Basically, specifying child elements within parents elements will only result in greater specificity when that parent element has a specificity that is greater than or equal to the specificity of contradicting styles. If those contradicting styles' outermost specificty is greater than that of the parent selector, the contradicting styles will apply. This principle holds true throughout every level of nesting.
 
 To read more on rules of Specificity, check out <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity">MDN docs</a>.
 
-Seem a little confusing? Try playing around with this stuff yourself to see what does and doesn't apply. You may not run into these type of contradictory styles often, but when you do it's helpful to know which set of styles has the greatest authority.
+Still a little confusing? Try playing around with this stuff yourself to see what does and doesn't apply. You may not run into these type of contradictory styles often, but when you do it's helpful to know which set of styles has the greatest authority.
 
 ### Order
 
