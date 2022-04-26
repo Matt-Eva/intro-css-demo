@@ -290,7 +290,7 @@ In order for styling attributes like `vw` and `vh` to work, you must have this m
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 ```
 
-This tag sets the viewport width and height to be scaled to whatever device the webpage is being used upon.
+This tag sets the viewport width and height to be scaled to whatever device the webpage is being viewed upon.
 
 #### percentages (%)
 
