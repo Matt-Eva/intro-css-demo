@@ -306,11 +306,9 @@ Since we just discussed the Box Model, along with all of its corresponding style
 
 All elements are given a default value of `content-box` for the `box-sizing` attribute. In other words, if you don't specifically give an element a different `box-sizing` attribute (like `border-box`), that element will have default `box-sizing` of `content-box`. But what does that mean?
 
-It has to do with the final width and height of your element.
+It has to do with the final width and height of your element. Elements with a `box-sizing` style of `content-box` will have a total width of that element's set width - `width: 100px;` - plus that element's padding - `padding: 20px` - plus the width of the element's border - `border-width: 4px`, which in this case would result in a total width of `124px`. The same applies for height.
 
-If you give an element with a `box-sizing` style of `border-box` a set width and height, it will not grow larger than that width and/or height, even if you give it padding and a border. This is a big difference than and element with a `box-sizing` attribute of `content-box` (which is the default - if you've never used the `box-sizing` style attribute before, it means you've been working with a `content-box` style). The width and height of a `content-box` element will be the width that's been set, plus the padding, plus the border width.
-
-Setting all elements as `border-box` by default makes styling a lot easier - once we give any element a width and height, it will never expand beyond that width or height, even as we add padding and borders. We only have to keep track of one value, instead of three values.
+`border-box` handles things a little bit differently. Once an element with the `box-sizing` attribute of `border-box` has been given a set width and height - `width: 100px; height: 200px` - it will never exceed that width or height, no matter how much padding you give it or how thick you make your border.
 
 Here's an example of the difference between using `border-box` and `content-box`. The yellow square is being selected by the class name basic-template, the green square is being selected by the class name `border-box, and the blue square is being selected by the class name `content-box`.
 
@@ -347,9 +345,17 @@ Here's an example of the difference between using `border-box` and `content-box`
 
 As you can see, the element with border-box never grows beyond 100px, even though we've given it the same padding and border as our element styled with content-box.
 
+Although it varies based on preference, I often like to give all my elements a default `box-sizing` attribute of `border-box` using the universal selector, since that way I'll only have to keep track of a single value when determining the widths and heights of my elements. It also makes adding and adjusting the border and padding of an element less disruptive to the overall layout of the webpage.
+
 ### Background Color
 
 ### Font Styles
+
+### Overflow
+
+## Setting Default Styles
+
+
 
 ## Mini-Assignment
 
