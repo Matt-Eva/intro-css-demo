@@ -277,12 +277,13 @@ We've covered the fundamentals of CSS - now let's talk about some actual styling
 
 ### Box-Sizing
 
-Border-box vs Content-box
-If you give an element with a box-sizing style of border-box a set width and height, it will not grow larger than that width and/or height, even if you give it padding and a border. This is a big difference than and element with a box-sizing attribute of content-box (which is the default - if you've never used the box-sizing style attribute before, it means you've been working with a content-box style). The width and height of a content-box element will be the width that's been set, plus the padding, plus the border width.
+#### Border-box vs Content-box
 
-Setting all elements as border-box by default makes styling a lot easier - once we give any element a width and height, it will never expand beyond that width or height, even as we add padding and borders. We only have to keep track of one value, instead of three values.
+If you give an element with a `box-sizing` style of `border-box` a set width and height, it will not grow larger than that width and/or height, even if you give it padding and a border. This is a big difference than and element with a `box-sizing` attribute of `content-box` (which is the default - if you've never used the `box-sizing` style attribute before, it means you've been working with a `content-box` style). The width and height of a `content-box` element will be the width that's been set, plus the padding, plus the border width.
 
-Here's an example of the difference between using border-box and content-box. The yellow square is being selected by the class name basic-template, the green square is being selected by the class name border-box, and the blue square is being selected by the class name content-box.
+Setting all elements as `border-box` by default makes styling a lot easier - once we give any element a width and height, it will never expand beyond that width or height, even as we add padding and borders. We only have to keep track of one value, instead of three values.
+
+Here's an example of the difference between using `border-box` and `content-box`. The yellow square is being selected by the class name basic-template, the green square is being selected by the class name `border-box, and the blue square is being selected by the class name `content-box`.
 
 ```
 .basic-template{
