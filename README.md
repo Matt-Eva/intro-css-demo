@@ -279,7 +279,9 @@ We've covered the fundamentals of CSS - now let's talk about some actual styling
 
 Perhaps unsurprisingly, you can set both the width and the height of HTML elements, using the `width` and `height` styling attribute. You can assign elements fixed value widths and heights using `px`, `em`, and `rem` values (`100px`, `1em`, `2rem`) as well as relative heights and values using `vw` (viewport width), `vh` (viewport height), and `%` (percent width or height of parent element). 
 
-Using relative heights is a very handy tool, and you're definitely going to want to use them in certain situations, but there are a few pitfalls to be wary of:
+When using `vw` or `vh`, each integer value (`1`, `10`, `23`, etc.) represents a percentage of the viewport width and viewport height. If we give an element a height of `10vh`, we're telling it to be as tall as 10% of our total viewport height. This can be very handy, especially if we want an element to automatically resize depending on the size of the screen we're viewing it on.
+
+Using relative heights is going to be essential in certain situations, but there are a few pitfalls to be wary of:
 
 #### vw and vh
 In order for styling attributes like `vw` and `vh` to work, you must have this meta tag in the `<head>` section of your HTML file:
@@ -344,3 +346,11 @@ Here's an example of the difference between using `border-box` and `content-box`
 
 
 As you can see, the element with border-box never grows beyond 100px, even though we've given it the same padding and border as our element styled with content-box.
+
+### Background Color
+
+### Font Styles
+
+## Mini-Assignment
+
+
