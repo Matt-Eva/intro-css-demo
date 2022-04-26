@@ -251,8 +251,8 @@ The second outermost layer ont he box model is the `border` - this is the actual
 ```
 While all elements will have a default border - the edge of the element itself - you won't see a visible border on your elements until you give them one. In the above example, I've given my element a solid border that's 4px wide and has rounded corners. You can also set border styles for specific sides of you element, using `border-top`, `border-right`, `border-bottom`, and `border-left`. 
 
-Check out these docs to learn more about border styling:
-https://www.w3schools.com/css/css_border.asp
+Check out these docs to learn more about border styling: </br>
+https://www.w3schools.com/css/css_border.asp </br>
 https://developer.mozilla.org/en-US/docs/Web/CSS/border
 
 ### Padding
