@@ -275,9 +275,36 @@ The `content` portion of an element is the actual content that that element is s
 
 We've covered the fundamentals of CSS - now let's talk about some actual styling attributes that you're likely to use.
 
+### Width and Height
+
+Perhaps unsurprisingly, you can set both the width and the height of HTML elements, using the `width` and `height` styling attribute. You can assign elements fixed value widths and heights using `px`, `em`, and `rem` values (`100px`, `1em`, `2rem`) as well as relative heights and values using `vw` (viewport width), `vh` (viewport height), and `%` (percent width or height of parent element). 
+
+Using relative heights is a very handy tool, and you're definitely going to want to use them in certain situations, but there are a few pitfalls to be wary of:
+
+#### vw and vh
+In order for styling attributes like `vw` and `vh` to work, you must have this meta tag in the `<head>` section of your HTML file:
+
+```
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+```
+
+This tag sets the viewport width and height to be scaled to whatever device the webpage is being used upon.
+
+#### %
+
+If you neglect to give a parent element a set width and / or height, then try to use a `%` value to set the width and / or height of a child element, it won't work. In order to use `%` values for the width and / or height of an element, its parent element must have an established width and / or height.
+
+This doesn't mean that you shouldn't use `%` values for width and height - they can often come in handy - but it does mean you have to be cognizant of how your setting widths and heights along your element hierarchy. In many instances, using `vw` or `vh` is often more straightforward, since they'll always reference the viewport width or height.
+
 ### Box-Sizing
 
+Since we just discussed the Box Model, along with all of its corresponding styles, let's jump into the `box-sizing` styling attribute, since it's responsible for controlling how the Box Model displays for HTML elements. We're going to talk about the difference between the `content-box` styling attribute and the `border-box` styling attribute, both of which can be assigned to `box-sizing`.
+
 #### Border-box vs Content-box
+
+All elements are given a default value of `content-box` for the `box-sizing` attribute. In other words, if you don't specifically give an element a different `box-sizing` attribute (like `border-box`), that element will have default `box-sizing` of `content-box`. But what does that mean?
+
+It has to do with the final width and height of your element.
 
 If you give an element with a `box-sizing` style of `border-box` a set width and height, it will not grow larger than that width and/or height, even if you give it padding and a border. This is a big difference than and element with a `box-sizing` attribute of `content-box` (which is the default - if you've never used the `box-sizing` style attribute before, it means you've been working with a `content-box` style). The width and height of a `content-box` element will be the width that's been set, plus the padding, plus the border width.
 
