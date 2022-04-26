@@ -185,7 +185,7 @@ Let's check out a different scenario. We're specifying that we want to select th
     height: 200vh;
 }
 ```
-In this instance, our `#info-section img` styles apply, because they technically have greater specificity. Feeling confused? Let's break it it down a bit.
+In this instance, our `#info-section img` styles apply, because it technically has greater specificity due to nesting. Feeling confused? Let's break it it down a bit.
 
 Let's run back to our first example, where `#specific-header` overrode `body h1`. Why did using an Id override styles in that instance and not in our `#info-section img` instance? Well, let's look at the outermost level of our selector `body` and `#specific-header`. Because Ids have a greater specificity than simple tag names, `#specific-header` is going to override `body h1` - the specificity of an Id counts for more than the specificity of adding `h1` after our body tag.
 
