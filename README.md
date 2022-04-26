@@ -256,3 +256,24 @@ https://www.w3schools.com/css/css_border.asp
 https://developer.mozilla.org/en-US/docs/Web/CSS/border
 
 ### Padding
+
+Between the edge of an element and the content that element is supposed to display (such as the text in our `#specific-header`) lies the `padding` of an element. Padding is similar to margin, except it defines the space between the `border` and the `content`. We define `padding` similar to the way we define `margin`:
+
+```
+#specific-header {
+    padding: 10px 40px 20px 90px;
+}
+```
+
+Giving padding two values will determine top and bottom padding, respectively, while giving padding one value will set padding on all four sides (similar to margin).
+
+### Content
+
+The `content` portion of an element is the actual content that that element is supposed to display. This could be text form `<h1>` and `<p>` elements, or the image in an `<img>` element. Or, it could be other elements nested inside of your outer element - an `<h1>` tag inside of a `<div>`. There is no styling attribute for the `content` itself, but it's still an important part of the Box Model to understand.
+
+## Common CSS Styling Attributes
+
+We've covered the fundamentals of CSS - now let's talk about some actual styling attributes that you're likely to use.
+
+### Box-Sizing
+
