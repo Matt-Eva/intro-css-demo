@@ -277,7 +277,7 @@ We've covered the fundamentals of CSS - now let's talk about some actual styling
 
 ### Width and Height
 
-Perhaps unsurprisingly, you can set both the width and the height of HTML elements, using the `width` and `height` styling attribute. You can assign elements fixed value widths and heights using `px`, `em`, and `rem` values (`100px`, `1em`, `2rem`) as well as relative heights and values using `vw` (viewport width), `vh` (viewport height), and `%` (percent width or height of parent element). 
+Perhaps unsurprisingly, you can set both the width and the height of HTML elements, using the `width` and `height` styling attribute. You can assign elements fixed value widths and heights using `px`, `em`, and `rem` values (`100px`, `1em`, `2rem` - here's some <a href="https://medium.com/@dixita0607/css-units-for-font-size-px-em-rem-79f7e592bb97#:~:text=rem%20values%20are%20relative%20to,the%20browser%20(usually%2016px).">further reading</a>) as well as relative heights and values using `vw` (viewport width), `vh` (viewport height), and `%` (percent width or height of parent element). 
 
 When using `vw` or `vh`, each integer value (`1`, `10`, `23`, etc.) represents a percentage of the viewport width and viewport height. If we give an element a height of `10vh`, we're telling it to be as tall as 10% of our total viewport height. This can be very handy, especially if we want an element to automatically resize depending on the size of the screen we're viewing it on.
 
