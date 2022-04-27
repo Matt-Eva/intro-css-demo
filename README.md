@@ -556,4 +556,5 @@ h1 {
 
 ## Mini-Assignment
 
+Let's put what we've learned into practice! Open up the folder labelled `practice`, then open `practice.css` and `practice.html` in your text editor. Go ahead and open `practice.html` in your browser as well to track your changes as you make them. If you don't have a live-refresh of your browser running every time you change your code, don't forget to refresh your browser after you've made changes.
 
