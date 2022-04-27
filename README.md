@@ -292,7 +292,7 @@ In order for styling attributes like `vw` and `vh` to work, you must have this m
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 ```
 
-This tag sets the viewport width and height to be scaled to whatever device the webpage is being viewed upon.
+This tag sets the viewport width and height to be scaled to whatever device the webpage is being viewed upon. You're basically always going to want this tag in your HTML, so this isn't a reason to avoid using `vw` or `vh` - it's just something to be mindful of.
 
 #### percentages (%)
 
@@ -350,6 +350,36 @@ As you can see, the element with border-box never grows beyond 100px, even thoug
 Although it varies based on preference, I often like to give all my elements a default `box-sizing` attribute of `border-box` using the universal selector, since that way I'll only have to keep track of a single value when determining the widths and heights of my elements. It also makes adding and adjusting the border and padding of an element less disruptive to the overall layout of the webpage.
 
 ### Background Color
+
+We can set the background color for elements using the aptly named `background-color` attribute. If you look at any webpage (like GitHub), you'll notice that different portions of the screen have different background-colors. This is all controlled by the `background-color` attribute. Knowing how to effectively use this attribute is essential to designing aesthetic, appealing webpages that make your website or application a joy to interact with.
+
+Syntax:
+
+```
+body {
+    background-color: blue;
+}
+```
+
+### Color Selection
+
+If we were set to using simple color names to determine things like background, font, and border color, we'd have a pretty limited tool kit. Fortunately, CSS offers three different techniques for mixing colors: `hsl`, `rgba`, and `hex`.
+
+#### hsl
+
+`hsl` stands for `hue`, `saturation`, and `lightness`, and is written in the following manner:
+
+```
+body {
+    background-color: hsl(0, 50%, 50%)
+}
+```
+
+The first value within the parentheses determines the `hue` of the color you're selecting. You can choose numbers from `0` to `360` - `0` corresponds with red, `120` corresponds with green, `240` corresponds with blue, and `360` corresponds with red again. This first value is basically your color wheel - if you want some type of yellow color, you're going to likely be selecting values in the `40` to `80` range. If you want teal of some type, then `160` to `200` is likely a good choice. For purple, between `280` and `320`.
+
+The second value within the parentheses is always written as a percentage. It controls the `saturation` of the color, aka how much of that color you actual want. You can think of it as a vibrancy / greyscale controller. If you set this value to `0%`, you're going to be working with shades of grey. If you set it at `100%`, your going to be working with the most saturated version of that color possible.
+
+
 
 ### Font Styles
 
