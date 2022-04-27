@@ -300,6 +300,23 @@ If you neglect to give a parent element a set width and / or height, then try to
 
 This doesn't mean that you shouldn't use `%` values for width and height - they can often come in handy - but it does mean you have to be cognizant of how your setting widths and heights along your element hierarchy. In many instances, using `vw` or `vh` is often more straightforward, since they'll always reference the viewport width or height.
 
+#### min and max width and height
+
+CSS also allows us to set minimum and maximum widths and heights for our elements. This is an incredibly handy tool, especially if you're working with relative values. Let's say you have a `<div>` that you want to represent a card displaying a certain type of information. Let's imagine that you want this card's width and height to vary depending on the size of the screen it's being viewed on. 
+
+But, let's imagine you also want to make sure this card never gets too small or too large. (What if somebody is looking at it on their smartphone, or on an ultrawide monitor?) This is where minimum and maximum widths and heights come in. Using these attributes, you can tell your element to never grow beyond a certain size, or shrink past a certain point. Here's what using these styles might look like:
+
+```
+.card-div{
+    width: 10vw;
+    height: 10vh;
+    max-width: 400px;
+    min-width: 100px;
+    max-height: 300px;
+    min-height: 150px;
+}
+```
+
 ### Box-Sizing
 
 Since we just discussed the Box Model, along with all of its corresponding styles, let's jump into the `box-sizing` styling attribute, since it's responsible for controlling how the Box Model displays for HTML elements. We're going to talk about the difference between the `content-box` styling attribute and the `border-box` styling attribute, both of which can be assigned to `box-sizing`.
@@ -414,6 +431,8 @@ For each set of colors, black corresponds with `00`, full saturation corresponds
 I'd recommend playing around with <a href="https://www.w3schools.com/colors/colors_hexadecimal.asp">this color picker</a> to get the hang of `hex` values, as they're the least intuitive color picker option (in my opinion). That doesn't mean you shouldn't use them, however! Plenty of people do, and some even prefer `hex` over `rgba` and `hsl`.
 
 ### Font Styles
+
+There are a variety of different types of font-stylings you can apply
 
 ### Overflow
 
