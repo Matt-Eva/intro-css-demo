@@ -70,6 +70,8 @@ h1 {
 }
 ```
 
+Not sure what a `<div>` actual is? Here's some <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div">further reading</a> from MDN Docs.
+
 ### Selecting by Id
 
 Check out our `basics.html` file. You'll notice that we have an `<h1>` tag with an id attribute of "specific-header" within its opening tag. By giving our HTML elements Ids, we can select them in our CSS files (and in our JavaScript files). Ids a special in that only one HTML element can have a certain Id - it's a very specific way to select a certain HTML element.
