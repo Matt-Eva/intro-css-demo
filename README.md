@@ -411,7 +411,7 @@ body {
 
 For each set of colors, black corresponds with `00`, full saturation corresponds with `ff`, and varying levels of saturation corresponding with combinations of numbers and letters, such as `a1` or `2b`. The increase in saturation goes from `0 - 9` followed by `a - f`. So `a` indicates a higher color saturation than `9`, while `b` indicates a higher color saturation than `a`. The first number / character in the pair has a greater role in determining the saturation of the color, while the second number / character has a more incremental role in determining the saturation of the color. `a1` is therefore much more saturated than `1a`.
 
-I'd recommend playing around with <a href="https://www.w3schools.com/colors/colors_hexadecimal.asp">this color picker</a> to get a hang for `hex` values, as they're the least intuitive color picker option. That doesn't mean you shouldn't use them, however! Plenty of people do, and some even prefer `hex` over `rgba` and `hsl`.
+I'd recommend playing around with <a href="https://www.w3schools.com/colors/colors_hexadecimal.asp">this color picker</a> to get the hang of `hex` values, as they're the least intuitive color picker option (in my opinion). That doesn't mean you shouldn't use them, however! Plenty of people do, and some even prefer `hex` over `rgba` and `hsl`.
 
 ### Font Styles
 
