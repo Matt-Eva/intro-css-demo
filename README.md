@@ -432,7 +432,7 @@ I'd recommend playing around with <a href="https://www.w3schools.com/colors/colo
 
 ### Font Styles
 
-There are a variety of different types of font-stylings you can apply
+There are a variety of different types of font-stylings you can apply to your fonts including `font-family`, `font-size`, and `color`. You can also expand the number of fonts you have access to by importing fonts from <a href="https://fonts.google.com/">Google Fonts</a>.
 
 ### Overflow
 
