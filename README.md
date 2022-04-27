@@ -517,7 +517,42 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/overflow
 
 ## Setting Default Styles
 
+To make our lives easier, we're often going to want to set some _default styles_ to our webpage. Maybe there's a certain font we want to use as default - maybe we want to make sure every element has the `border-box` `box-sizing` property. Or maybe we want to make sure all of our link tags default to being black with no underline:
 
+```
+a {
+    color: black;
+    text-decoration: none;
+}
+```
+
+There are a certain set of styles that I would recommend setting using your universal selector - `*` - each time you start working on a new project. This will make styling easier and more consistent. You can always go further than this, but this is a great starting point for setting default styles:
+
+```
+* {
+    margin: 0;
+    padding; 0;
+    box-sizing: border-box;
+    font-family: <font-family of your choice>;
+    font-size: <font-size of your choice>;
+}
+```
+
+Why set these default styles? Well, some elements have pre-defined margins and padding that come are included whenever you reference them in your HTML (think header elements like `<h1>`). Setting all margin and padding to `0` using the universal selector removes all of these pre-defined margins and padding, which makes controlling your layout a lot easier.
+
+Give all of your elements a `box-sizing` attribute of `border-box` means that once you set a width or height to an element, it won't exceed that width or height, regardless of whether or not you give it a border.
+
+Setting a default `font-family` allows you to establish a clear styling theme throughout your website using a more attractive font that `Times New Roman`.
+
+Finally, setting a default `font-size` allows you to use `rem` throughout your document and easily adjust the overall font sizing of your webpage. Browsers automatically default to a `16px` base font size, so you don't strictly need this if that size works for your needs, but it's helpful to drop in to remind yourself that you can change the base font size if you want to. 
+
+Note: Adding this base `font-size` will also remove the default font-size styling on elements like `<h1>`. You can always add some additional default stylings for your `<h1>` elements if you want to, which can be based on this root font size. Ex:
+
+```
+h1 {
+    font-size: 2em;
+}
+```
 
 ## Mini-Assignment
 
