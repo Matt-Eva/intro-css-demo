@@ -377,7 +377,7 @@ body {
 
 The first value within the parentheses determines the `hue` of the color you're selecting. You can choose numbers from `0` to `360` - `0` corresponds with red, `120` corresponds with green, `240` corresponds with blue, and `360` corresponds with red again. This first value is basically your color wheel - if you want some type of yellow color, you're going to likely be selecting values in the `40` to `80` range. If you want teal of some type, then `160` to `200` is likely a good choice. For purple, between `280` and `320`.
 
-The second value within the parentheses is always written as a percentage. It controls the `saturation` of the color, aka how much of that color you actual want. You can think of it as a vibrancy / greyscale controller. If you set this value to `0%`, you're going to be working with shades of grey. If you set it at `100%`, your going to be working with the most saturated version of that color possible.
+The second value within the parentheses is always written as a percentage. It controls the `saturation` of the color, aka how much of that color you actually want. You can think of it as a vibrancy / greyscale controller. If you set this value to `0%`, you're going to be working with shades of grey. If you set it at `100%`, your going to be working with the most saturated version of that color possible.
 
 The third value within the parentheses is also always written as a percentage. It controls the `lightness` of a color. Setting the `lightness` to `0%` will result in black - setting it to `100%` will result in white. Ranges in the middle control how dark or light the pigmentation is. To create brown, for example, you would select a yellow color, then enter a low percentage level for `lightness`.
 
