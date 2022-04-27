@@ -434,7 +434,86 @@ I'd recommend playing around with <a href="https://www.w3schools.com/colors/colo
 
 There are a variety of different types of font-stylings you can apply to your fonts including `font-family`, `font-size`, and `color`. You can also expand the number of fonts you have access to by importing fonts from <a href="https://fonts.google.com/">Google Fonts</a>.
 
+#### font-family
+
+the `font-family` attribute allows you to select the style of font that you want to use. The default `font-family` is set to `Times New Roman`. You're likely going to want to change this, however, as `Times New Roman` isn't the easiest font to read on the web (in general, you're going to want to go with "sans-serif" fonts, which are fonts that don't have any ornamentation added to the letter - just smooth curves or straight lines).
+
+Setting the font-family is pretty easy:
+
+```
+h1 {
+    font-family: Helvetica;
+}
+```
+
+If you find a particular font on Google Fonts that you want to add to your CSS, you can import that font at the top of your CSS file, or drop the link to it in the `<head>` section of your HTML file. Google Fonts makes it easy for you to do either. Let's imagine I want to import the `Roboto` font from Google Fonts.
+
+I can either drop this in my `<head>` tag:
+```
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+```
+Or add this at the top of my CSS file:
+```
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+```
+Both will allow me to use this font within my CSS file.
+
+#### font-size
+
+`font-size` is pretty straightforward - it controls the size of your font. However, one thing to be cognizant of when styling your font-size is the size indicator you use. You can use any one you like - `px`, `em`, `rem`, `vh`, `%` - but many people opt for using `rem`. This <a href="https://www.digitalocean.com/community/tutorials/css-rem-vs-em-units">articl</a> by DigitalOcean does a good job of breaking down the difference between `em` and `rem`, and why you may want to use one over the other.
+
+`rem` derives its value from a `root` font size (that which is set at the document level). This defaults to `16px` for most browsers, but you can adjust it by assigning the document itself a new root font size:
+
+```
+html {
+    font-size: 18px
+}
+
+or 
+
+* {
+    font-size: 18px
+}
+```
+
+(we can use the Unverisal Selector here because it will also select the `<html>` tag.
+
+Giving an element a `font-size` styling of `1rem` will now mean that it has a value of `18px`. Giving it a value of `2rem` will mean it has a value of `36px`.
+
+Using font-sizing in this way allows you to easily adjust the overall sizing of fonts in general - if you want to make all the font on your webpage slightly larger, you can adjust the root font. Same goes if you want to adjust the root font.
+
+You may not want to always do something like this, in which case other sizing indicators will work fine, but this is a handy tool to have in your back pocket.
+
+#### color
+
+The `color` attribute is responsible for setting the font color of an element or a set of elements. You can use all of the color selectors describe previously when choosing the font color.
+
+``` 
+a {
+    color: black;
+}
+```
+
+This example would set the font color of all `<a>` tags in your document to `black`.
 ### Overflow
+
+`overflow` is likely a property you'll only use on elements you use as containers, but it's an _essential_ piece of CSS to know. It's name is pretty self-explanatory - it allows you to control how overflowing content inside of an element is displayed.
+
+Let's imagine we have a `div` the we want to display some text. Inside that `div`, we have a `<p>` tag that contains a bunch of text. We've given our `div` a set width and height, to make sure it fits nicely in the overall layout of our webpage. However, we have a _lot_ of text we're trying to display in our `<p>` tag - so much so that it spills outside of the height we've set on our `div`. This looks pretty messy, and we definitely don't want our final display to look like this.
+
+This is where we can use the `overflow` property! By setting `overflow` to `scroll` or `auto`, our element will know to hide all content that falls outside of its width and height and add a scrollbar that will allow a user to scroll through to see the rest of the content.
+
+```
+.info-div {
+    overflow: auto
+}
+```
+
+To read more about overflow, check out these docs: </br>
+https://www.w3schools.com/css/css_overflow.asp</br>
+https://developer.mozilla.org/en-US/docs/Web/CSS/overflow
 
 ## Setting Default Styles
 
