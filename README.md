@@ -379,7 +379,13 @@ The first value within the parentheses determines the `hue` of the color you're 
 
 The second value within the parentheses is always written as a percentage. It controls the `saturation` of the color, aka how much of that color you actual want. You can think of it as a vibrancy / greyscale controller. If you set this value to `0%`, you're going to be working with shades of grey. If you set it at `100%`, your going to be working with the most saturated version of that color possible.
 
+The third value within the parentheses is also always written as a percentage. It controls the `lightness` of a color. Setting the `lightness` to `0%` will result in black - setting it to `100%` will result in white. Ranges in the middle control how dark or light the pigmentation is. To create brown, for example, you would select a yellow color, then enter a low percentage level for `lightness`.
 
+#### rgba
+
+`rgb` stands for `red green blue`. Using `rgb` is similar to using `hsl`, except you choose a value for `red`, a value for `green`, and a value for `blue`. You can pick between `0` and `255` for each color, `0` being no color added, `255` being the most color added. If `hsl` is like a color wheel, `rgb` is more like a paint pallet that you can use to mix different colors to produce new colors. 
+
+The `a` portion of `rgba
 
 ### Font Styles
 
