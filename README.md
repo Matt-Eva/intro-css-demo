@@ -70,7 +70,7 @@ h1 {
 }
 ```
 
-Not sure what a `<div>` actual is? Here's some <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div">further reading</a> from MDN Docs.
+Not sure what a `<div>` actually is? Here's some <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div">further reading</a> from MDN Docs.
 
 ### Selecting by Id
 
@@ -381,11 +381,37 @@ The second value within the parentheses is always written as a percentage. It co
 
 The third value within the parentheses is also always written as a percentage. It controls the `lightness` of a color. Setting the `lightness` to `0%` will result in black - setting it to `100%` will result in white. Ranges in the middle control how dark or light the pigmentation is. To create brown, for example, you would select a yellow color, then enter a low percentage level for `lightness`.
 
+I personally prefer using `hsl` for most of my color selection needs, as I feel it's the most intuitive and easiest to use.
+
 #### rgba
 
 `rgb` stands for `red green blue`. Using `rgb` is similar to using `hsl`, except you choose a value for `red`, a value for `green`, and a value for `blue`. You can pick between `0` and `255` for each color, `0` being no color added, `255` being the most color added. If `hsl` is like a color wheel, `rgb` is more like a paint pallet that you can use to mix different colors to produce new colors. 
 
-The `a` portion of `rgba
+The `a` portion of `rgba` controls the transparency of the color you select. This is similar to lightness, in that a greater transparency will make a color lighter, but it also allows you to display other elements that may be covered up by the element you're styling. This can run contrary to your goals at times, but at other times you might want to achieve this affect. `rgba` is a good tool to have in your back pocket, even if you don't use it often.
+
+Giving your `a` portion a value of `1` will make it completely opaque. Giving it a value of `0` will make it completely transparent. Giving it values in between `0` and `1` will give it varying levels of transparency.
+
+Syntax: 
+```
+body {
+    background-color: rgba(20, 100, 50, 0.5)
+}
+```
+
+#### hex
+
+`hex` colors work similarly to `rgb`, in that you specify different levels of pigmentation. What differs is that, instead of selecting a single number, you enter numerical / lexical values from `00` to `ff`. You give three sets of these values - the first controls red, the second controls green, and the third controls blue. 
+
+Syntax:
+```
+body {
+    background-color: ff142a;
+}
+```
+
+For each set of colors, black corresponds with `00`, full saturation corresponds with `ff`, and varying levels of saturation corresponding with combinations of numbers and letters, such as `a1` or `2b`. The increase in saturation goes from `0 - 9` followed by `a - f`. So `a` indicates a higher color saturation than `9`, while `b` indicates a higher color saturation than `a`. The first number / character in the pair has a greater role in determining the saturation of the color, while the second number / character has a more incremental role in determining the saturation of the color. `a1` is therefore much more saturated than `1a`.
+
+I'd recommend playing around with <a href="https://www.w3schools.com/colors/colors_hexadecimal.asp">This color picker</a> to get a hang for `hex` values, as they're the least intuitive color picker option. That doesn't mean you shouldn't use them, however! Plenty of people do, and some even prefer `hex` over `rgba` and `hsl`.
 
 ### Font Styles
 
