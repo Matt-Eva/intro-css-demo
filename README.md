@@ -580,7 +580,7 @@ Let's put what we've learned into practice! Open up the folder labelled `practic
     <li>Now that they're successfully connected, let's create the following elements in `practice.html`:
         <ul>
             <li>A div with an id of header</li>
-            <li>An h1 inside of our header div with an id of title</li>
+            <li>An h1 inside of our header div with an id of title. Give it any text you want.</li>
             <li>A div with an id of main-display</li>
             <li>3 img tags. You can choose any images you want using the src attribute in the img tags. Ex:</br>
                 img src="https://cdn.pixabay.com/photo/2018/05/27/15/51/walrus-3433733__340.jpg" alt="walrus"</li>
@@ -614,6 +614,8 @@ Let's put what we've learned into practice! Open up the folder labelled `practic
             <li>Are your images all distorted now? Let's fix that - we can use the "object-fit" styling attribute and set it to "cover" for all of our images. This will resize and crop the images to fit in the specific width and height, rather than distorting them.
         </ul>
     </li>
+    <li>Let's make all of our paragraphs italicized</li>
+    <li>Let's give our two colorful paragraphs a func color. Use hsl, rgba, or hex Let's also make them bold, so that they stand out even more</li>
 </ol>
     
 
