@@ -569,6 +569,17 @@ Let's put what we've learned into practice! Open up the folder labelled `practic
             <li>A div with an id of main-display</li>
             <li>3 img tags. You can choose any images you want using the src attribute in the img tags. Ex:</br>
                 img src="https://cdn.pixabay.com/photo/2018/05/27/15/51/walrus-3433733__340.jpg" alt="walrus"</li>
+            <li> 3 p tags, with text inside. Let's all give them the class "display-text", and give two of them an additional class of "colorful".
+        </ul>
+    </li>
+    <li>It's time to start styling! Let's start with some default styles:
+        <ul>
+            <li>Give all elements a default margin of 0</li>
+            <li>Give all elements a default padding of 0</li>
+            <li>Give all elements a box-sizing attribute of border-box</li>
+            <li>Make the default font-size 18px</li>
+            <li>Make the default font-family Open Sans (we'll need to import this font-family from Google Fonts)</li>
+            <li>Give all h1 elements a default font size that is twice the size of the root font size</li>
         </ul>
     </li>
 </ol>
