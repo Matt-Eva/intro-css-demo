@@ -495,8 +495,23 @@ a {
     color: black;
 }
 ```
-
 This example would set the font color of all `<a>` tags in your document to `black`.
+
+### font-style and font-weight
+
+The `font-style` and `font-weight` property allows you to set different styles to your font, such as `italic` or `bold`. To set a font to `bold` and `italic`, you would do something like this"
+
+```
+#specific-header {
+    font-style: italic;
+    font-weight: bold;
+}
+```
+
+More on `font-style`: https://www.w3schools.com/cssref/pr_font_font-style.asp
+
+More on `font-weight`: https://www.w3schools.com/cssref/pr_font_weight.asp
+
 ### Overflow
 
 `overflow` is likely a property you'll only use on elements you use as containers, but it's an _essential_ piece of CSS to know. It's name is pretty self-explanatory - it allows you to control how overflowing content inside of an element is displayed.
