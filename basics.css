@@ -39,6 +39,8 @@ body h1{
     background-color: hsl(60, 20%, 80%);
     /* font-family: Helvetica; */
     border: solid;
+    border-width: 4px;
+    border-radius: 5px;
     margin: 10px /*top*/ 80px /*right*/ 20px /*bottom*/ 10px /*left*/;
     /* margin: 10px 40px;
     margin: 10px; */
