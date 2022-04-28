@@ -569,7 +569,7 @@ Let's put what we've learned into practice! Open up the folder labelled `practic
             <li>A div with an id of main-display</li>
             <li>3 img tags. You can choose any images you want using the src attribute in the img tags. Ex:</br>
                 img src="https://cdn.pixabay.com/photo/2018/05/27/15/51/walrus-3433733__340.jpg" alt="walrus"</li>
-            <li> 3 p tags, with text inside. Let's all give them the class "display-text", and give two of them an additional class of "colorful".
+            <li> 3 p tags, with text inside. Let's give them all the class "display-text", and give two of them an additional class of "colorful".
         </ul>
     </li>
     <li>It's time to start styling! Let's start with some default styles:
@@ -580,6 +580,17 @@ Let's put what we've learned into practice! Open up the folder labelled `practic
             <li>Make the default font-size 18px</li>
             <li>Make the default font-family Open Sans (we'll need to import this font-family from Google Fonts)</li>
             <li>Give all h1 elements a default font size that is twice the size of the root font size</li>
+        </ul>
+    </li>
+    <li>Let's start setting some widths and heights:
+        <ul>
+            <li>Let's give our header div a width that's as wide as the entire viewport and and a height that's 10% of the viewport height.</li>
+            <li>Let's give our main display dive a width that's as wide as the entire viewport and a height that's 90% of the viewport height.</li>
+        </ul>
+    </li>
+    <li>Let's set some background colors!
+        <ul>
+            <li>Let's give both our header div and our main display div a unique background color. Use hsl, rgba, or hex to set the color style.</li>
         </ul>
     </li>
 </ol>
