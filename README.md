@@ -610,7 +610,7 @@ Let's put what we've learned into practice! Open up the folder labelled `practic
     </li>
     <li>Let's resize our images. What's a way we could select all of our images without giving them a class?
         <ul>
-            <li>Once you've selected them, let's give them all a fixed width and height. You can choose what width and height you want to give them.</li>
+            <li>Once you've selected them, let's give them all a fixed width and height, such that the images are now squares. You can choose what width and height you want to give them.</li>
             <li>Are your images all distorted now? Let's fix that - we can use the "object-fit" styling attribute and set it to "cover" for all of our images. This will resize and crop the images to fit in the specific width and height, rather than distorting them.
         </ul>
     </li>
