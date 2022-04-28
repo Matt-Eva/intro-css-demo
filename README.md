@@ -558,3 +558,18 @@ h1 {
 
 Let's put what we've learned into practice! Open up the folder labelled `practice`, then open `practice.css` and `practice.html` in your text editor. Go ahead and open `practice.html` in your browser as well to track your changes as you make them. If you don't have a live-refresh of your browser running every time you change your code, don't forget to refresh your browser after you've made changes.
 
+### Deliverables
+
+<ol>
+    <li>Our `practice.html` file already has it's basic structure implemented. But what is it missing if we want to connect it to our `practice.css` file?</li>
+    <li>Now that they're successfully connected, let's create the following elements in `practice.html`:
+        <ul>
+            <li>A `div` with an `id` of `header`</li>
+            <li>An `h1` inside of our `header` `div` with an id of `title`</li>
+            <li>A `div` with an `id` of `main-display`</li>
+            <li>3 `img` tags. You can choose any images you want using the `src` attribute in the `img` tags. Ex: `<img src="https://cdn.pixabay.com/photo/2018/05/27/15/51/walrus-3433733__340.jpg" alt="walrus"/>`</li>
+        </ul>
+    </li>
+</ol>
+    
+
