@@ -582,9 +582,9 @@ Let's put what we've learned into practice! Open up the folder labelled `practic
             <li>A div with an id of header</li>
             <li>An h1 inside of our header div with an id of title. Give it any text you want.</li>
             <li>A div with an id of main-display</li>
-            <li>3 img tags. You can choose any images you want using the src attribute in the img tags. Ex:</br>
+            <li>3 img tags, inside of our main-display. You can choose any images you want using the src attribute in the img tags. Ex:</br>
                 img src="https://cdn.pixabay.com/photo/2018/05/27/15/51/walrus-3433733__340.jpg" alt="walrus"</li>
-            <li> 3 p tags, with text inside. Let's give them all the class "display-text", and give two of them an additional class of "colorful".
+            <li> 3 p tags, with text inside, inside of our main-display. Let's give them all the class "display-text", and give two of them an additional class of "colorful".
         </ul>
     </li>
     <li>It's time to start styling! Let's start with some default styles:
