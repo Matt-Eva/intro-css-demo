@@ -614,11 +614,12 @@ Let's put what we've learned into practice! Open up the folder labelled `practic
             <li>Are your images all distorted now? Let's fix that - we can use the "object-fit" styling attribute and set it to "cover" for all of our images. This will resize and crop the images to fit in the specific width and height, rather than distorting them.
         </ul>
     </li>
-    <li>Let's make all of our paragraphs italicized</li>
-    <li>Let's give our two colorful paragraphs a func color. Use hsl, rgba, or hex Let's also make them bold, so that they stand out even more</li>
+    <li>Let's make all of our paragraphs bold</li>
+    <li>Let's give our two colorful paragraphs a func color. Use hsl, rgba, or hex Let's also make them italicized, so that they stand out even more</li>
 </ol>
     
 Your final product should look something like this:
-![Screen Shot 2022-04-28 at 10 35 57 AM](https://user-images.githubusercontent.com/89106805/165813764-27cc6676-0992-46d5-83dc-52e10073a5df.png)
+
+![Screen Shot 2022-04-28 at 10 38 17 AM](https://user-images.githubusercontent.com/89106805/165814124-13bc8925-220d-4ac6-8d29-eb47bd7abfee.png)
 
 
