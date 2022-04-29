@@ -63,3 +63,22 @@ explicitly removed or overridden by other styles.*/
 
 /* Selecting elements by tagname is the second lest specific selector. */
 
+div {
+    background-color: green;
+}
+
+h1 {
+    background-color: pink;
+}
+
+/* Next in order of specificity is selection by class */
+
+.footer {
+   background-color: orange;
+}
+
+/* Finally, the most specific level of selection is id */
+
+#footer-id {
+    background-color: teal;
+}
