@@ -28,13 +28,20 @@ h1{
     background-color: red;
 }
 
-/* finally discuss class selectors. Talk about how elements can have multiple classes. */
+/* Next, discuss class selectors. Talk about how elements can have multiple classes. */
 .walrus-text {
     background-color: magenta;
 }
 
 .italic {
     font-style: italic;
+}
+
+/* Finally, discuss selecting by child element - this will lead into specificity
+and hierarchy convo: */
+
+#walrus-info img{
+    height: 200px;
 }
 
 /* Specificity and Hierarchy  */
