@@ -1,0 +1,58 @@
+/* This document serves as an example for your live-demo. Styles appear here in the order in 
+which they're discussed - your CSS file in your live demo will likely end up looking different
+than this file. 
+Make sure you have developers tools open when walking through the demo! This will help show 
+application of styles*/
+
+/* DISCUSS LINKING CSS TO HTML */
+/* Once you've successfully linked your files, move on to selectors. */
+
+
+/* SELECTORS */
+/* First discuss use of universal selector. */
+* {
+    background-color: cyan;
+}
+
+/* Next discuss individual tag name selectors */
+div {
+    background-color: green;
+}
+
+h1{
+    background-color: pink;
+}
+
+/* Then discuss id selectors */
+#walrus-info {
+    background-color: red;
+}
+
+/* finally discuss class selectors. Talk about how elements can have multiple classes. */
+.walrus-text {
+    background-color: magenta;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* Specificity and Hierarchy  */
+
+/* 
+--> Styles that have been given to an element (or set of elements) are never fully removed - 
+unless of course you delete those styles from your CSS file. 
+
+--> Instead they are OVERRIDDEN (or "overwritten") by other styles. 
+
+--> Styles will not stop applying to an element until they have been
+explicitly removed or overridden by other styles.*/
+
+/* The universal selector is the least specific selector. */
+
+* {
+    background-color: cyan;
+}
+
+/* Selecting elements by tagname is the second lest specific selector. */
+
