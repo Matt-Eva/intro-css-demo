@@ -61,7 +61,7 @@ explicitly removed or overridden by other styles.*/
     background-color: cyan;
 }
 
-/* Selecting elements by tagname is the second lest specific selector. */
+/* Selecting elements by tagname is the second least specific selector. */
 
 div {
     background-color: green;
