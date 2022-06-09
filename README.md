@@ -242,7 +242,7 @@ When giving four values to a margin, the leftmost value defines the margin at th
 
 ### Border
 
-The second outermost layer ont he box model is the `border` - this is the actual _edge_ of the HTML element, and can be given its own set of styles:
+The second outermost layer on the box model is the `border` - this is the actual _edge_ of the HTML element, and can be given its own set of styles:
 
 ```
 #specific-header {
