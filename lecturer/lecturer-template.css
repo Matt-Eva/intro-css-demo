@@ -87,3 +87,19 @@ h1 {
 
 /* Discuss how selecting by child plays a role in specificity*/
 
+#walrus-info img{
+    background-color: blue;
+}
+
+#walrus-img {
+    background-color: red;
+}
+
+/* Describe how the first selection actually counts for greater specificity that the second, 
+even though we're selecting by id in the second example. */
+
+#walrus-info #walrus-img {
+    background-color: green;
+}
+
+/* Describe how this selector now overrides our previous nested selector (id trumps tag) */
