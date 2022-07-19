@@ -32,7 +32,7 @@ Now that you've got your CSS file hooked up to your HTML file, it's time to star
 
 ### Using a Selector / Writing CSS
 
-When writing CSS, we'll reference a specific selector (universal, tagname, id, classname, etc.), then write the styles we want to apply to that element / that set of elements within curly braces. Each CSS styling attribute will consist of an attribute name and an attribute style separated by a colon. Different sets of corresponding names and styles are separated by a semicolon. So, your CSS will end up looking something like this:
+When writing CSS, we'll reference a specific selector (universal, tagname, id, classname, etc.) to specify an html element or set of html elements we want to apply styles to. We'll then write the styles we want to apply to that element / that set of elements within curly braces. Each CSS styling attribute will consist of an attribute name and an attribute style separated by a colon. Different sets of corresponding names and styles are separated by a semicolon. So, your CSS will end up looking something like this:
 
 ```
 <css selector> {
@@ -46,7 +46,7 @@ Now, let's talk about some of the most common selectors you'll use in your code.
 
 ### The Universal Selector
 
-If you check out your `bascis.css` file, you'll see that at the top of our file we're using the `*` symbol. This sybmol is known as the "universal selector". Using this selector means we're telling our CSS file to grab every HTML element in file and apply the following set of styles to it. In this example, we're giving every element a `padding` of `0`, a `margin` of `0`, and a `box-sizing` of `border-box` (we'll discuss what these each mean in a later section).
+If you check out your `bascis.css` file, you'll see that at the top of our file we're using the `*` symbol. This symbol is known as the "universal selector". Using this selector means we're telling our CSS file to grab every HTML element in file and apply the following set of styles to it. In this example, we're giving every element a `padding` of `0`, a `margin` of `0`, and a `box-sizing` of `border-box` (we'll discuss what these each mean in a later section).
 
 ```
 * {
