@@ -298,7 +298,7 @@ This tag sets the viewport width and height to be scaled to whatever device the 
 
 If you neglect to give a parent element a set width and / or height, then try to use a `%` value to set the width and / or height of a child element, it won't work. In order to use `%` values for the width and / or height of an element, its parent element must have an established width and / or height.
 
-This doesn't mean that you shouldn't use `%` values for width and height - they can often come in handy - but it does mean you have to be cognizant of how your setting widths and heights along your element hierarchy. In many instances, using `vw` or `vh` is often more straightforward, since they'll always reference the viewport width or height.
+This doesn't mean that you shouldn't use `%` values for width and height - they can often come in handy - but it does mean you have to be cognizant of how you're setting widths and heights along your element hierarchy. In many instances, using `vw` or `vh` is often more straightforward, since they'll always reference the viewport width or height.
 
 #### min and max width and height
 
