@@ -462,7 +462,7 @@ Both will allow me to use this font within my CSS file.
 
 #### font-size
 
-`font-size` is pretty straightforward - it controls the size of your font. However, one thing to be cognizant of when styling your font-size is the size indicator you use. You can use any one you like - `px`, `em`, `rem`, `vh`, `%` - but many people opt for using `rem`. This <a href="https://www.digitalocean.com/community/tutorials/css-rem-vs-em-units">articl</a> by DigitalOcean does a good job of breaking down the difference between `em` and `rem`, and why you may want to use one over the other.
+`font-size` is pretty straightforward - it controls the size of your font. However, one thing to be cognizant of when styling your font-size is the size indicator you use. You can use any one you like - `px`, `em`, `rem`, `vh`, `%` - but many people opt for using `rem`. This <a href="https://www.digitalocean.com/community/tutorials/css-rem-vs-em-units">article</a> by DigitalOcean does a good job of breaking down the difference between `em` and `rem`, and why you may want to use one over the other.
 
 `rem` derives its value from a `root` font size (that which is set at the document level). This defaults to `16px` for most browsers, but you can adjust it by assigning the document itself a new root font size:
 
