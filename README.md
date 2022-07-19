@@ -329,7 +329,7 @@ It has to do with the final width and height of your element. Elements with a `b
 
 `border-box` handles things a little bit differently. Once an element with the `box-sizing` attribute of `border-box` has been given a set width and height - `width: 100px; height: 200px` - it will never exceed that width or height, no matter how much padding you give it or how thick you make your border.
 
-Here's an example of the difference between using `border-box` and `content-box`. The yellow square is being selected by the class name basic-template, the green square is being selected by the class name `border-box, and the blue square is being selected by the class name `content-box`.
+Here's an example of the difference between using `border-box` and `content-box`. The yellow square is being selected by the class name `basic-template`, the green square is being selected by the class name `border-box`, and the blue square is being selected by the class name `content-box`.
 
 ```
 .basic-template{
