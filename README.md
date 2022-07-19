@@ -555,7 +555,7 @@ There are a certain set of styles that you can set using your universal selector
 
 Why set these default styles? Well, some elements have pre-defined margins and padding that are included whenever you reference them in your HTML (think header elements like `<h1>`). Setting all margin and padding to `0` using the universal selector removes all of these pre-defined margins and padding, which makes controlling your layout a lot easier.
 
-Give all of your elements a `box-sizing` attribute of `border-box` means that once you set a width or height to an element, it won't exceed that width or height, regardless of whether or not you give it a border.
+Giving all of your elements a `box-sizing` attribute of `border-box` means that once you set a width or height to an element, it won't exceed that width or height, regardless of whether or not you give it a border.
 
 Setting a default `font-family` allows you to establish a clear styling theme throughout your website using a more attractive font that `Times New Roman`.
 
