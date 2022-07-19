@@ -482,7 +482,7 @@ or
 
 Giving an element a `font-size` styling of `1rem` will now mean that it has a value of `18px`. Giving it a value of `2rem` will mean it has a value of `36px`.
 
-Using font-sizing in this way allows you to easily adjust the overall sizing of fonts in general - if you want to make all the font on your webpage slightly larger, you can adjust the root font. Same goes if you want to adjust the root font.
+Using font-sizing in this way allows you to easily adjust the overall sizing of fonts in general - if you want to make all the font on your webpage slightly larger, you can adjust the root font.
 
 You may not want to always do something like this, in which case other sizing indicators will work fine, but this is a handy tool to have in your back pocket.
 
