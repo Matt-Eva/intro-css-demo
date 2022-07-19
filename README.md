@@ -175,7 +175,7 @@ body h1{
 ```
 However, our `#specific-header` selector will still override our `body h1` selector.
 
-Let's check out a different scenario. We're specifying that we want to select the `<img>` inside of our `#info-section` div by writing `#info-section img` - telling CSS that we want to add styles to all `<img>` tags that are child elements of `#info-section`. We're also selecting that same `<img>` tag by referencing its Id, `#mountain-pic`. We have a set of contradicting styles: `#info-section img` is telling our `<img>` tag to be 20vh tall = `#mountain-pic` is telling our `<img>` tag to be 200vh tall. Which one applies?
+Let's check out a different scenario. We're specifying that we want to select the `<img>` inside of our `#info-section` div by writing `#info-section img` - telling CSS that we want to add styles to all `<img>` tags that are child elements of `#info-section`. We're also selecting that same `<img>` tag by referencing its Id, `#mountain-pic`. We have a set of contradicting styles: `#info-section img` is telling our `<img>` tag to be 20vh tall, while `#mountain-pic` is telling our `<img>` tag to be 200vh tall. Which one applies?
 
 ```
 #info-section img {
