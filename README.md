@@ -600,7 +600,7 @@ Let's put what we've learned into practice! Open up the folder labelled `practic
     <li>Let's start setting some widths and heights:
         <ul>
             <li>Let's give our header div a width that's as wide as the entire viewport and and a height that's 10% of the viewport height.</li>
-            <li>Let's give our main display dive a width that's as wide as the entire viewport and a height that's 90% of the viewport height.</li>
+            <li>Let's give our main display div a width that's as wide as the entire viewport and a height that's 90% of the viewport height.</li>
         </ul>
     </li>
     <li>Let's set some background colors!
