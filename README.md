@@ -213,7 +213,7 @@ h1 {
 }
 ```
 
-In the above example, the second set of styles will apply, setting the font color of all h1 elements to red. These set of styles apply because they have the _same level of specificity_ as the preceding style instructions and they _appear further down in the file_. This means the latter set of styles will successfully override the former set of styles.
+In the above example, the second set of styles will apply, setting the font color of all h1 elements to red. This set of styles applies because they have the _same level of specificity_ as the preceding style instructions and they _appear further down in the file_. This means the latter set of styles will successfully override the former set of styles.
 
 ## The Box Model
 
