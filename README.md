@@ -271,7 +271,7 @@ Giving padding two values will determine top and bottom padding, respectively, w
 
 ### Content
 
-The `content` portion of an element is the actual content that that element is supposed to display. This could be text form `<h1>` and `<p>` elements, or the image in an `<img>` element. Or, it could be other elements nested inside of your outer element - an `<h1>` tag inside of a `<div>`. There is no styling attribute for the `content` itself, but it's still an important part of the Box Model to understand.
+The `content` portion of an element is the actual content that that element is supposed to display. This could be text for `<h1>` and `<p>` elements, or the image in an `<img>` element. Or, it could be other elements nested inside of your outer element - an `<h1>` tag inside of a `<div>`. There is no styling attribute for the `content` itself, but it's still an important part of the Box Model to understand.
 
 ## Common CSS Styling Attributes
 
