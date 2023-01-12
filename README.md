@@ -470,15 +470,7 @@ Both will allow me to use this font within my CSS file.
 html {
     font-size: 18px
 }
-
-or 
-
-* {
-    font-size: 18px
-}
 ```
-
-(we can use the Unverisal Selector here because it will also select the `<html>` tag.
 
 Giving an element a `font-size` styling of `1rem` will now mean that it has a value of `18px`. Giving it a value of `2rem` will mean it has a value of `36px`.
 
