@@ -46,7 +46,7 @@ Now, let's talk about some of the most common selectors you'll use in your code.
 
 ### The Universal Selector
 
-If you check out your `bascis.css` file, you'll see that at the top of our file we're using the `*` symbol. This symbol is known as the "universal selector". Using this selector means we're telling our CSS file to grab every HTML element in our file and apply the following set of styles to it. In this example, we're giving every element a `padding` of `0`, a `margin` of `0`, and a `box-sizing` of `border-box` (we'll discuss what these each mean in a later section).
+If you check out your `basics.css` file, you'll see that at the top of our file we're using the `*` symbol. This symbol is known as the "universal selector". Using this selector means we're telling our CSS file to grab every HTML element in our file and apply the following set of styles to it. In this example, we're giving every element a `padding` of `0`, a `margin` of `0`, and a `box-sizing` of `border-box` (we'll discuss what these each mean in a later section).
 
 ```
 * {
